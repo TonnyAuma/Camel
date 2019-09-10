@@ -50,7 +50,7 @@ public class App {
 			 */
 			ProducerTemplate template = context.createProducerTemplate();
 			context.start();
-			template.sendBody("activemq:test.queue", "First Camel Project");
+			template.sendBody("activemq:test.queue", "Example Thread that works after 1 second as scheduled");
 			Thread.sleep(10000);
 
 		} finally {
